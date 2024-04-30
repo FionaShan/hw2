@@ -77,12 +77,50 @@
 # Use `Model.destroy_all` code.
 # TODO!
 
+Studio.destroy_all
+Movie.destroy_all
+Actor.destroy_all
+Role.destroy_all
+
 # Generate models and tables, according to the domain model.
 # TODO!
+## -> completed under `db`, `migrate`
 
 # Insert data into the database that reflects the sample data shown above.
 # Do not use hard-coded foreign key IDs.
 # TODO!
+
+# a) Insert data for Studio
+warner_bros = Studio.new
+warner_bros ["name"] = "Warner Bros."
+warner_bros.save
+
+# b) Insert data for Movie
+batman_begins = Movie.new
+batman_begins ["title"] = "Batman Begins"
+batman_begins ["year_released"] = 2005
+batman_begins ["rated"] = "PG-13"
+batman_begins ["studio_id"] = warner_bros.id
+batman_begins.save
+
+the_dark_knight = Movie.new
+the_dark_knight ["title"] = "The Dark Knight"
+the_dark_knight ["year_released"] = "2008"
+the_dark_knight ["rated"] = "PG-13"
+the_dark_knight ["studio_id"] = warner_bros.id
+the_dark_knight.save
+
+the_dark_knight_rises = Movie.new
+the_dark_knight_rises ["title"] = "The Dark Knight Rises"
+the_dark_knight_rises ["year_released"] = 2012
+the_dark_knight_rises ["rated"] = "PG-13"
+the_dark_knight_rises ["studio_id"] = warner_bros.id
+the_dark_knight_rises.save
+
+# c) Insert data for Actor
+
+# d) Insert data for Role
+
 
 # Prints a header for the movies output
 puts "Movies"
