@@ -100,26 +100,160 @@ batman_begins = Movie.new
 batman_begins ["title"] = "Batman Begins"
 batman_begins ["year_released"] = 2005
 batman_begins ["rated"] = "PG-13"
-batman_begins ["studio_id"] = warner_bros.id
+batman_begins ["studio"] = warner_bros
 batman_begins.save
 
 the_dark_knight = Movie.new
 the_dark_knight ["title"] = "The Dark Knight"
-the_dark_knight ["year_released"] = "2008"
+the_dark_knight ["year_released"] = 2008
 the_dark_knight ["rated"] = "PG-13"
-the_dark_knight ["studio_id"] = warner_bros.id
+the_dark_knight ["studio"] = warner_bros
 the_dark_knight.save
 
 the_dark_knight_rises = Movie.new
 the_dark_knight_rises ["title"] = "The Dark Knight Rises"
 the_dark_knight_rises ["year_released"] = 2012
 the_dark_knight_rises ["rated"] = "PG-13"
-the_dark_knight_rises ["studio_id"] = warner_bros.id
+the_dark_knight_rises ["studio"] = warner_bros
 the_dark_knight_rises.save
 
 # c) Insert data for Actor
+christian_bale = Actor.new
+christian_bale ["name"] = "Christian Bale"
+christian_bale.save
+
+michael_caine = Actor.new
+michael_caine ["name"] = "Michael Caine"
+michael_caine.save
+
+liam_neeson = Actor.new
+liam_neeson ["name"] = "Liam Neeson"
+liam_neeson.save
+
+katie_holmes = Actor.new
+katie_holmes ["name"] = "Katie Holmes"
+katie_holmes.save
+
+gary_oldman = Actor.new
+gary_oldman ["name"] = "Gary Oldman"
+gary_oldman.save
+
+heath_ledger = Actor.new
+heath_ledger ["name"] = "Heath Ledger"
+heath_ledger.save
+
+aaron_eckhart = Actor.new
+aaron_eckhart ["name"] = "Aaron Eckhart"
+aaron_eckhart.save
+
+maggie_gyllenhaal = Actor.new
+maggie_gyllenhaal ["name"] = "Maggie Gyllenhaal"
+maggie_gyllenhaal.save
+
+tom_hardy = Actor.new
+tom_hardy ["name"] = "Tom Hardy"
+tom_hardy.save
+
+joseph_gordon_levitt = Actor.new
+joseph_gordon_levitt ["name"] = "Joseph Gordon Levitt"
+joseph_gordon_levitt.save
+
+anne_hathaway = Actor.new
+anne_hathaway ["name"] = "Anne Hathaway"
+anne_hathaway.save
+
 
 # d) Insert data for Role
+
+role1 = Role.new
+role1["movie"] = batman_begins
+role1["actor"] = christian_bale
+role1["character_name"] = "Bruce Wayne"
+role1.save
+
+role2 = Role.new
+role2["movie"] = batman_begins
+role2["actor"] = michael_caine
+role2["character_name"] = "Alfred"
+role2.save
+
+role3 = Role.new
+role3["movie"] = batman_begins
+role3["actor"] = liam_neeson
+role3["character_name"] = "Ra's Al Ghul"
+role3.save
+
+role4 = Role.new
+role4["movie"] = batman_begins
+role4["actor"] = katie_holmes
+role4["character_name"] = "Rachel Dawes"
+role4.save
+
+role5 = Role.new
+role5["movie"] = batman_begins
+role5["actor"] = gary_oldman
+role5["character_name"] = "Commissioner Gordon"
+role5.save
+
+role6 = Role.new
+role6["movie"] = the_dark_knight
+role6["actor"] = christian_bale
+role6["character_name"] = "Bruce Wayne"
+role6.save
+
+role7 = Role.new
+role7["movie"] = the_dark_knight
+role7["actor"] = heath_ledger
+role7["character_name"] = "Joker"
+role7.save
+
+role8 = Role.new
+role8["movie"] = the_dark_knight
+role8["actor"] = aaron_eckhart
+role8["character_name"] = "Harvey Dent"
+role8.save
+
+role9 = Role.new
+role9["movie"] = the_dark_knight
+role9["actor"] = michael_caine
+role9["character_name"] = "Alfred"
+role9.save
+
+role10 = Role.new
+role10["movie"] = the_dark_knight
+role10["actor"] = maggie_gyllenhaal
+role10["character_name"] = "Rachel Dawes"
+role10.save
+
+role11 = Role.new
+role11["movie"] = the_dark_knight_rises
+role11["actor"] = christian_bale
+role11["character_name"] = "Bruce Wayne"
+role11.save
+
+role12 = Role.new
+role12["movie"] = the_dark_knight_rises
+role12["actor"] = gary_oldman
+role12["character_name"] = "Commissioner Gordon"
+role12.save
+
+role13 = Role.new
+role13["movie"] = the_dark_knight_rises
+role13["actor"] = tom_hardy
+role13["character_name"] = "Bane"
+role13.save
+
+role14 = Role.new
+role14["movie"] = the_dark_knight_rises
+role14["actor"] = joseph_gordon_levitt
+role14["character_name"] = "John Blake"
+role14.save
+
+role15 = Role.new
+role15["movie"] = the_dark_knight_rises
+role15["actor"] = anne_hathaway
+role15["character_name"] = "Selina Kyle"
+role15.save
 
 
 # Prints a header for the movies output
