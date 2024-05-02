@@ -166,91 +166,91 @@ anne_hathaway.save
 # d) Insert data for Role
 
 role1 = Role.new
-role1["movie"] = batman_begins
+role1["movie_id"] = batman_begins
 role1["actor_id"] = christian_bale
 role1["character_name"] = "Bruce Wayne"
 role1.save
 
 role2 = Role.new
-role2["movie"] = batman_begins
+role2["movie_id"] = batman_begins
 role2["actor_id"] = michael_caine
 role2["character_name"] = "Alfred"
 role2.save
 
 role3 = Role.new
-role3["movie"] = batman_begins
+role3["movie_id"] = batman_begins
 role3["actor_id"] = liam_neeson
 role3["character_name"] = "Ra's Al Ghul"
 role3.save
 
 role4 = Role.new
-role4["movie"] = batman_begins
+role4["movie_id"] = batman_begins
 role4["actor_id"] = katie_holmes
 role4["character_name"] = "Rachel Dawes"
 role4.save
 
 role5 = Role.new
-role5["movie"] = batman_begins
+role5["movie_id"] = batman_begins
 role5["actor_id"] = gary_oldman
 role5["character_name"] = "Commissioner Gordon"
 role5.save
 
 role6 = Role.new
-role6["movie"] = the_dark_knight
+role6["movie_id"] = the_dark_knight
 role6["actor_id"] = christian_bale
 role6["character_name"] = "Bruce Wayne"
 role6.save
 
 role7 = Role.new
-role7["movie"] = the_dark_knight
+role7["movie_id"] = the_dark_knight
 role7["actor_id"] = heath_ledger
 role7["character_name"] = "Joker"
 role7.save
 
 role8 = Role.new
-role8["movie"] = the_dark_knight
+role8["movie_id"] = the_dark_knight
 role8["actor_id"] = aaron_eckhart
 role8["character_name"] = "Harvey Dent"
 role8.save
 
 role9 = Role.new
-role9["movie"] = the_dark_knight
+role9["movie_id"] = the_dark_knight
 role9["actor_id"] = michael_caine
 role9["character_name"] = "Alfred"
 role9.save
 
 role10 = Role.new
-role10["movie"] = the_dark_knight
+role10["movie_id"] = the_dark_knight
 role10["actor_id"] = maggie_gyllenhaal
 role10["character_name"] = "Rachel Dawes"
 role10.save
 
 role11 = Role.new
-role11["movie"] = the_dark_knight_rises
+role11["movie_id"] = the_dark_knight_rises
 role11["actor_id"] = christian_bale
 role11["character_name"] = "Bruce Wayne"
 role11.save
 
 role12 = Role.new
-role12["movie"] = the_dark_knight_rises
+role12["movie_id"] = the_dark_knight_rises
 role12["actor_id"] = gary_oldman
 role12["character_name"] = "Commissioner Gordon"
 role12.save
 
 role13 = Role.new
-role13["movie"] = the_dark_knight_rises
+role13["movie_id"] = the_dark_knight_rises
 role13["actor_id"] = tom_hardy
 role13["character_name"] = "Bane"
 role13.save
 
 role14 = Role.new
-role14["movie"] = the_dark_knight_rises
+role14["movie_id"] = the_dark_knight_rises
 role14["actor_id"] = joseph_gordon_levitt
 role14["character_name"] = "John Blake"
 role14.save
 
 role15 = Role.new
-role15["movie"] = the_dark_knight_rises
+role15["movie_id"] = the_dark_knight_rises
 role15["actor_id"] = anne_hathaway
 role15["character_name"] = "Selina Kyle"
 role15.save
@@ -270,6 +270,7 @@ for movie in movies
     year_released = movie ["year_released"]
     rated = movie ["rated"]
     studio_name = movie ["studio_name"]
+    puts "#{title} #{year_released} #{rated} #{studio_name}"
 end
 
 
