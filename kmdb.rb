@@ -319,9 +319,12 @@ puts ""
 
 roles = Role.all
 for role in roles
-    movie_title = role ["movie_title"]
-    actor_name = role ["actor_name"]
+    movie = role ["movie_id"]
+    actor = role ["actor_id"]
     character_name = role ["character_name"]
-puts "#{movie_title} #{actor_name} #{character_name}"
+    movie_title = Movie.find_by ({"id" => movie})
+    actor_name = Actor.find_by ({"id" => actor})
+    
+puts "#{movie_title["title"]} #{actor_name["name"]} #{character_name}"
 end
 
