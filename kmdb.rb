@@ -155,7 +155,7 @@ tom_hardy ["name"] = "Tom Hardy"
 tom_hardy.save
 
 joseph_gordon_levitt = Actor.new
-joseph_gordon_levitt ["name"] = "Joseph Gordon Levitt"
+joseph_gordon_levitt ["name"] = "Joseph Gordon-Levitt"
 joseph_gordon_levitt.save
 
 anne_hathaway = Actor.new
@@ -217,7 +217,6 @@ role6["actor_id"] = christian_bale ["id"]
 role6.save
 
 
-
 the_dark_knight = Movie.find_by({"title" => "The Dark Knight"})
 heath_ledger = Actor.find_by({"name" => "Heath Ledger"})
 role7 = Role.new
@@ -253,43 +252,41 @@ role10.save
 the_dark_knight_rises = Movie.find_by({"title" => "The Dark Knight Rises"})
 christian_bale = Actor.find_by({"name" => "Christian Bale"})
 role11 = Role.new
-role11["movie"] = the_dark_knight_rises
-role11["actor"] = christian_bale
 role11["character_name"] = "Bruce Wayne"
 role11["movie_id"] = the_dark_knight_rises["id"]
-role11["actor_id"] = 265
+role11["actor_id"] = christian_bale ["id"]
 role11.save
 
+the_dark_knight_rises = Movie.find_by({"title" => "The Dark Knight Rises"})
+gary_oldman = Actor.find_by({"name" => "Gary Oldman"})
 role12 = Role.new
-role12["movie"] = the_dark_knight_rises
-role12["actor"] = gary_oldman
 role12["character_name"] = "Commissioner Gordon"
-role12["movie_id"] = 77
-role12["actor_id"] = 269
+role12["movie_id"] = the_dark_knight_rises["id"]
+role12["actor_id"] = gary_oldman["id"]
 role12.save
 
+the_dark_knight_rises = Movie.find_by({"title" => "The Dark Knight Rises"})
+tom_hardy = Actor.find_by({"name" => "Tom Hardy"})
 role13 = Role.new
-role13["movie"] = the_dark_knight_rises
-role13["actor"] = tom_hardy
 role13["character_name"] = "Bane"
-role13["movie_id"] = 77
-role13["actor_id"] = 273
+role13["movie_id"] = the_dark_knight_rises["id"]
+role13["actor_id"] = tom_hardy["id"]
 role13.save
 
+the_dark_knight_rises = Movie.find_by({"title" => "The Dark Knight Rises"})
+joseph_gordon_levitt = Actor.find_by({"name" => "Joseph Gordon-Levitt"})
 role14 = Role.new
-role14["movie"] = the_dark_knight_rises
-role14["actor"] = joseph_gordon_levitt
 role14["character_name"] = "John Blake"
-role14["movie_id"] = 77
-role14["actor_id"] = 274
+role14["movie_id"] = the_dark_knight_rises["id"]
+role14["actor_id"] = joseph_gordon_levitt["id"]
 role14.save
 
+the_dark_knight_rises = Movie.find_by({"title" => "The Dark Knight Rises"})
+anne_hathaway = Actor.find_by({"name" => "Anne Hathaway"})
 role15 = Role.new
-role15["movie"] = the_dark_knight_rises
-role15["actor"] = anne_hathaway
 role15["character_name"] = "Selina Kyle"
-role15["movie_id"] = 77
-role15["actor_id"] = 275
+role15["movie_id"] = the_dark_knight_rises["id"]
+role15["actor_id"] = anne_hathaway["id"]
 role15.save
 
 
